@@ -2,12 +2,12 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: ["@babel/polyfill", "./src/js/main.js", "./src/sass/main.scss"],
+  entry: ["@babel/polyfill", "./src/js/main.js", "./src/css/main.scss"],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "js/bundle.js",
+    path: path.resolve(__dirname, "public/js"),
+    filename: "main.js",
   },
-  plugins: [new MiniCssExtractPlugin({ filename: "css/style.css" })],
+  plugins: [new MiniCssExtractPlugin({ filename: "../css/style.css" })],
   module: {
     rules: [
       {
