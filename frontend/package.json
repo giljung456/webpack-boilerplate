@@ -1,19 +1,7 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "1.0.0",
   "scripts": {
     "build": "webpack -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/giljung456/webpack-boilerplate.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/giljung456/webpack-boilerplate/issues"
-  },
-  "homepage": "https://github.com/giljung456/webpack-boilerplate#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
