@@ -26,6 +26,14 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         exclude: /node_modules/,
       },
+      {
+        test: /\.png$/,
+        loader: "file-loader",
+        options: {
+          outputPath: "../images/",
+          name: "[name].[ext]?[hash]",
+        },
+      },
     ],
   },
   devtool: "source-map",
